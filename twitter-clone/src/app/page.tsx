@@ -1,22 +1,28 @@
 import LeftSidebar from '0/components/LeftSidebar'
+import MainComponent from '0/components/MainComponent'
 import React from 'react'
+import { BsSearch } from 'react-icons/bs'
 
 const Home = () => {
   return (
     <div className='w-full h-full flex justify-center items-center bg-black'>
-      <div className='max-w-screen-xl w-full h-full flex relative'>
+      <div className='max-w-screen-xl w-full h-full flex relative border-4'>
         <LeftSidebar />
-        
-        {/* home timeline */}
-        <main className='ml-[275px] p-6  flex w-[600px] h-full min-h-screen flex-col border-l-[0.5px] border-r-[0.5px] border-gray-600'>
-          <h1 className='text-xl font-bold'>Home</h1>
-          <div className='border-t-[0.5px] border-b-[0.5px] border-gray-600 h-32'>
-
+        <MainComponent />
+        <section className='absolute w-[275px] right-0 flex flex-col items-stretch h-screen px-6'>
+          <div>
+            <div className='relative w-full h-full'>
+              <label htmlFor='searchBox' className='absolute top-0 left-0 h-full flex items-center justify-center'>
+                <BsSearch className='w-5 h-5 text-gray-500' />
+              </label>
+              <input
+                id='searchBox'
+                type="text"
+                placeholder='Search Twitter'
+                className='outline-none bg-transparent border-none w-full h-full rounded-xl py-4 px-8' />
+            </div>
           </div>
-        </main>
-        {/* right section */}
-        <section>
-
+          <div></div>
         </section>
       </div>
     </div>
