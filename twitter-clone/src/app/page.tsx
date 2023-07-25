@@ -5,7 +5,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className='w-full h-full flex justify-center items-center bg-black'>
+    <div className='w-full h-full flex justify-center items-center text-white relative bg-black'>
       <div className='max-w-screen-xl w-full h-full flex relative border-4'>
         <LeftSidebar />
         <MainComponent />
