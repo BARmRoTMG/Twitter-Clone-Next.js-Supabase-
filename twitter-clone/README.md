@@ -13,3 +13,7 @@ Main Features:
 - an infinite timeline (fetch the tweets)
 - user page/profile
 - users can like, save and reply a tweet.
+
+
+Supabase:
+npx supabase gen types typescript --undqxxddbyseiigbwnyr --schema public > types/supabase.ts
